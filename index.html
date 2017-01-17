@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/**
+ * Vertical align anything with 3 lines of CSS (excluding vendor prefixes)
+ *
+ * .element {
+ *   position: relative;
+ *   top: 50%;
+ *   transform: translateY(-50%);
+ * }
+ * --------------------------------------
+ */
+
+
+.text p {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.websites{
+  text-align: center;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+.image img {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.block-of-text p {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* ====================================
+   Base styling, to make the demo more fancy
+   ==================================== */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700,100);
+
+body {
+  font-family: Roboto, sans-serif;
+  background: #2C3D51;
+  padding: 1em;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  margin: 0.5em 0 1em 0;
+}
+
+h2 {
+ text-transform: uppercase;
+ margin: 0;
+ font-size: 16px;
+ position: absolute;
+ top: 5px;
+ right: 5px;
+ font-weight: bold;
+ color: #ECF0F1; 
+}
+
+section {
+  display: block;
+  max-width: 500px;
+  background: #E74C3C;
+  margin: 0 auto 1em;
+  height: 150px;
+  border-radius: .2em;
+  position: relative;
+  color: white;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  img, p {
+    padding: .25em;
+    margin: 0;
+    float: center;
+    margin-left: auto; 
+    margin-right: auto;
+    display: block;
+  }
+}
+.image{
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%); 
+}
+.block-of-text {
+  height: 220px;
+}
+
+.read-more {
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  margin-top: 3em;
+  a {
+    text-decoration: none;
+    color: #E74C3C;
+  }
+}
+a {
+  color: #00FF76;
+}
+</style>
+
+</head>
+<body>
+<!--
+
+
+      _____         
+     |_   _|   ___  
+       | |    / _ \ 
+       | |   | (_) |
+       |_|    \___/ 
+                    
+
+  _   _                         
+ | | | |   __ _   _   _         
+ | |_| |  / _` | | | | |  _____ 
+ |  _  | | (_| | | |_| | |_____|
+ |_| |_|  \__,_|  \__, |        
+                  |___/         
+  ____                 
+ |  _ \    ___   _ __  
+ | | | |  / _ \ | '_ \ 
+ | |_| | |  __/ | | | |
+ |____/   \___| |_| |_|
+                       
+
+Here's to never forgetting.
+--><h1>180 Webpages in 360 Days</h1>
+
+<section class="text" class="block-of-text" class="websites">
+  <h2>Website 1</h2>
+  <p><a href="#">The HomePage</a></p>
+  <div class="image"><img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/15698295_1305961226145928_5465127002533632559_n.jpg?oh=8febc6fb8ebc9edfec65c6904e36b6f8&oe=5920E38B" style="height: 100px; width: 100px;"> </div>
+</section>
+
+<section class="block-of-text" class="websites">
+  <h2>Website 2</h2>
+  <p><a href="http://s.codepen.io/RhysCrypto/debug/MJgowg"> Secret Message </a> <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-0/p280x280/15826216_1313309182077799_2708042289615423489_n.jpg?oh=7e9fea7822766c11f6975eaa300eb976&oe=58D70BB8" style="height: 100px; widht: 100px;"/></p>
+</section>
+
+<section class="block-of-text" class="websites">
+  <h2>Website 3</h2>
+  <p> <a href="http://codepen.io/RhysCrypto/debug/ggYvyo"> Stars </a></p>
+       <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-0/p206x206/15894957_1318022354939815_4761143002767294681_n.jpg?oh=dfc9440e1f4ca23af078d3a8f6eadfea&oe=58DB1437" style="height: 100px; width: 100px; top: 15px;"/>
+</section>
+<section class="block-of-text" class="websites">
+  <h2>Website 4</h2>
+  <p> <a href="http://codepen.io/RhysCrypto/debug/ggYvyo"> Snow </a></p>
+       <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-0/p206x206/15894229_1318022388273145_1245977422371924391_n.jpg?oh=6fbb519b38ce7cb30bc5c6d0a19ab726&oe=58E86610" style="height: 100px; width: 100px; top: 15px;"/>
+</section>
+</body>
+</html>
