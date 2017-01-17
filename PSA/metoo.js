@@ -16,7 +16,7 @@ $fourth = $('.fourth');
 $fifth = $('.fifth');
 $sixth = $('.sixth');
 $final = $('.final');
-$first.hide()
+$first.hide();
 $second.hide();
 $third.hide();
 $fourth.hide();
