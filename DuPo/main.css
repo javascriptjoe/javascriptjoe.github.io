@@ -1,0 +1,40 @@
+.centered {
+    height: 300px;
+  width: 300px;
+  position: absolute;
+  letter-spacing: 2px;
+  margin: -150px 0 0 -150px;
+  left: 50%;
+  top: 45%;
+  bottom: 50%;
+  text-align: center;
+/*  font-size: 20px; */
+}
+
+
+.DuPo {
+  font-family: Brush Script MT,cursive;
+}
+
+
+.login {
+  border-radius: 5px;
+  
+}
+
+.signup {
+  border-radius: 5px;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
