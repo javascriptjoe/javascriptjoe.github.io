@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="https://production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+  <link rel="mask-icon" type="" href="https://production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+  <title>CodePen - JS/CSS Die</title>
+  
+  
+  
+  
+      <style>
+      html {
+  margin: 0;
+}
+body {
+  top: 0;
+  left: 0;
+  background-image: radial-gradient(at 50% 155px, #ff0000, #000000);
+  background-attachment: fixed;
+}
+#die {
+  margin: auto;
+  margin-top: 50px;
+  width: 245px;
+  height: 210px;
+  padding-top: 35px;
+  box-shadow: 0px 0px 100px 1px #000000;
+  border-radius: 50px;
+  background-color: #ffffff;
+}
+#die > div {
+  position: absolute;
+  display: block;
+}
+.d {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  display: inline-block;
+  border-radius: 1000px;
+}
+#t {}
+#m {
+  margin-top: 60px;
+}
+#b {
+  margin-top: 120px;
+}
+.l {
+  margin-left: 20px;
+}
+#mm {
+  margin-left: 22.5px;
+}
+.r {
+  margin-left: 100px;
+}
+#mr {
+  margin-left: 22.5px;
+}
+    </style>
+
+  
+  
+  
+  
+</head>
+
+<body translate="no" >
+
+  <div id="die" onclick="roll()">
+  <div id="t">
+    <div class="d l" id="tl"></div>
+    <div class="d r" id="tr"></div>
+  </div>
+  <div id="m">
+    <div class="d l" id="ml"></div>
+    <div class="d" id="mm"></div>
+    <div class="d r" id="mr"></div>
+  </div>
+  <div id="b">
+    <div class="d l" id="bl"></div>
+    <div class="d r" id="br"></div>
+  </div>
+</div>
+  
+  
+    <script>
+    function ID(a) {
+  return document.getElementById(a);
+}
+var tl = ID("tl");
+var tr = ID("tr");
+var ml = ID("ml");
+var mm = ID("mm");
+var mr = ID("mr");
+var bl = ID("bl");
+var br = ID("br");
+var num;
+function show(b) {
+  ID(b).style.opacity = 1;
+}
+function reset() {
+  ID("tl").style.opacity = 0;
+  ID("tr").style.opacity = 0;
+  ID("ml").style.opacity = 0;
+  ID("mm").style.opacity = 0;
+  ID("mr").style.opacity = 0;
+  ID("bl").style.opacity = 0;
+  ID("br").style.opacity = 0;
+}
+function roll(){
+  num = Math.floor(Math.random() * 6 ) + 1;
+  switch (num) {
+    case 1:
+      reset();
+      show("mm");
+      break;
+    case 2:
+      reset();
+      show("tl");
+      show("br");
+      break;
+    case 3:
+      reset();
+      show("tl");
+      show("mm");
+      show("br");
+      break;
+    case 4:
+      reset();
+      show("tl");
+      show("tr");
+      show("bl");
+      show("br");
+      break;
+    case 5:
+      reset();
+      show("tl");
+      show("tr");
+      show("mm");
+      show("bl");
+      show("br");
+      break;
+    case 6:
+      reset();
+      show("tl");
+      show("tr");
+      show("ml");
+      show("mr");
+      show("bl");
+      show("br");
+      break;
+  }
+  console.log("You rolled " + num + "!")
+}
+  </script>
+
+  
+  
+
+</body>
+</html>
